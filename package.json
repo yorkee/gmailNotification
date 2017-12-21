@@ -1,0 +1,45 @@
+{
+  "name": "gmailnotification",
+  "version": "1.0.0",
+  "description": "sending notification using gmail",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha *.test.js",
+    "start": "babel-node app.js --presets es2015, stage-2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yorkee/gmailNotification.git"
+  },
+  "keywords": [
+    "mail",
+    "gmail",
+    "node",
+    "notification",
+    "smtp"
+  ],
+  "engines": {
+    "node": "8.*",
+    "npm": "*"
+  },
+  "author": "Elvin Yeung",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yorkee/gmailNotification/issues"
+  },
+  "homepage": "https://github.com/yorkee/gmailNotification#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "nodemailer": "^4.4.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "proxyquire": "^1.8.0",
+    "sinon": "^4.1.3"
+  }
+}
