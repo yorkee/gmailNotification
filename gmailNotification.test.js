@@ -23,10 +23,10 @@ describe('GmailNotification', () => {
 
 	it('should exist', () => {
 		let gmailNotification = new GmailNotification();
-		expect(gmailNotification).tonot.be.equal(null);
+		expect(gmailNotification).to.not.be.equal(null);
 	})
 
-	it('declare a transpoter' () => {
+	it('declare a transpoter', () => {
 		let gmailNotification = new GmailNotification();
 		expect(createTransportStub.calledOnce).to.equal(true);
 	})

@@ -13,7 +13,7 @@ class GmailNotification {
 		this.messgeTitle = title;
 
 		const createTransportOpt = {
-			host: "smpt.gmail.com",
+			host: "smtp.gmail.com",
 			secure: true,
 			port: 465,
 			requiresAuth: true,
@@ -37,7 +37,7 @@ class GmailNotification {
 		};
 
 		return new Promise((resolve, reject) => {
-			this.transporter,sendMail(mailOptions, (error, info) => {
+			this.transporter.sendMail(mailOptions, (error, info) => {
 				if (error){
 					console.log(error);
 					reject(error);
